@@ -1,0 +1,30 @@
+#calculator{
+    padding-top: 5px;
+    padding-left: 6px;
+    width: 500px;
+    height: 550px;
+    background-color: darkgray;
+    border-radius: 2px;
+}
+
+.inputButtons{
+    display: flex;
+
+}
+
+.button{
+    width: 120px;
+    height: 100px;
+    font-weight: bolder;
+    font-size: large;
+    border-radius: 2px;
+}
+
+#displayArea{
+    width: 485px;
+    height: 100px;
+    background-color: aliceblue;
+    border: 3px solid rgb(88, 88, 88);
+    border-radius: 2px;
+
+}
