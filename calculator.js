@@ -208,16 +208,18 @@ const processInput = (e) => {
             }
             break;
         case '.':
-            if(activeNumber == 1){
+            if(activeNumber == 1 && number1.includes('.') == false){
                 if(number1.length <= 18){
                     number1 = number1 + '.';
                     outputString.textContent = number1;}
                     else break;
             }else{
-                if(number2.length <= 18){
-                    number2 = number2 + '.';
-                    outputString.textContent = number2;}
-                    else break;
+                if(activeNumber == 2 && number2.includes('.')==false){
+                    if(number2.length <= 18){
+                        number2 = number2 + '.';
+                        outputString.textContent = number2;}
+                        else break;
+                }
             }
             break;
         case '+':
@@ -425,16 +427,20 @@ const processKeydown = (e) => {
                 }
                 break;
             case '.':
-                if(activeNumber == 1){
+                if(activeNumber == 1 && number1.includes('.') == false){
+                    console.log(number1.includes('.'));
                     if(number1.length <= 18){
                         number1 = number1 + '.';
                         outputString.textContent = number1;}
                         else break;
                 }else{
-                    if(number2.length <= 18){
-                        number2 = number2 + '.';
-                        outputString.textContent = number2;}
-                        else break;
+                    if(number2.includes('.') == false){
+                        console.log(number1.includes('.'));
+                        if(number2.length <= 18){
+                            number2 = number2 + '.';
+                            outputString.textContent = number2;}
+                            else break;
+                    }
                 }
                 break;
             case '+':
