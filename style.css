@@ -14,7 +14,7 @@ body{
 #calculator{
     
     width: 500px;
-    height: 590px;
+    height: 620px;
     background-color: darkgray;
     border-radius: 10px;
     border: 2px solid rgb(88, 88, 88);
@@ -50,7 +50,6 @@ body{
 }
 
 #displayArea{
-    padding-top: 10px;
     text-align: end;
     justify-self: center;
     font-family: 'Digital7';
@@ -84,4 +83,9 @@ body{
     &:active{
         box-shadow: none;
     }
+}
+
+#backSpaceButton{
+    position: relative;
+    left: 90%;
 }
